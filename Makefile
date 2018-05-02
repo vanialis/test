@@ -6,7 +6,8 @@ CPPFLAGS 	= -Iinclude
 
 CFLAGS 		= -W -Wall -Wextra
 
-SRCS 		= src/main.c
+SRCS 		= main/main.c \
+			src/square.c
 
 OBJS 		= $(SRCS:.c=.o)
 
