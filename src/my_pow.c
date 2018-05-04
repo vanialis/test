@@ -5,7 +5,7 @@ int my_pow(int nb, int pow)
 
 	i = 0;
 	j = nb;
-	pow = 0;
+	if (pow == 0)
 		return (1);
 	while (i < pow - 1)
 	{
