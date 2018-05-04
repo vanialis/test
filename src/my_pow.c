@@ -4,12 +4,13 @@ int my_pow(int nb, int pow)
 	int j;
 
 	i = 0;
-	j = nb;
+	if (pow = 0)
+		return (nb);
+	else
 	while (i < pow)
 	{
-
+		j = nb*nb
 		i++;
-
 	}
 }
 
