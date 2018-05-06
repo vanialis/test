@@ -14,11 +14,17 @@ int my_pow(int nb, int pow)
 	}
 	return(j);
 }
-	
 
+int my_my_pow(int nb, int pow)
+{
+	int ret;
 
-
-
-
-
-
+	ret = nb;
+	if (pow == 0)
+		return (1);
+	while (pow){
+		ret *= nb;
+		pow--;
+	}
+	return (ret);
+}

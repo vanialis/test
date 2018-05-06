@@ -6,8 +6,12 @@ CPPFLAGS 	= -Iinclude
 
 CFLAGS 		= -W -Wall -Wextra
 
-SRCS 		= main/main.c \
-			src/square.c
+SRCS 		= 	main/main.c \
+			src/square.c \
+			src/my_pow.c \
+			src/square_root.c
+			
+
 
 OBJS 		= $(SRCS:.c=.o)
 
@@ -22,3 +26,5 @@ clean :
 
 fclean : clean
 	$(RM) $(NAME)
+
+re : fclean $(NAME)
