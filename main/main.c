@@ -10,7 +10,7 @@ int main()
 {
 	int son;
 
-	son = my_strcmp("pote", "pot");
+	son = my_strcmp("pot", "pate");
 	printf("%d\n", son);
 	return(0);
 }
