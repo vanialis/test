@@ -1,40 +1,16 @@
 #include "my.h"
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
 
-int main() 
+int main()
 {
-	char c;
+	int son;
 
-	c = 'a';
-	printf("%c | ", c);
-	printf("%d\n", c);
-
-	c = 'A';
-	printf("%c | ", c);
-	printf("%d\n", c);
-
-	c = '0';
-	printf("%c | ", c);
-	printf("%d\n", c);
-
-	c = 98;
-	if (c == 'b')
-		printf("c est egal a 'b'\n");
-	if (c == 98)
-		printf("c est egal a 98\n");
-
-
-
-
-	char j;
-
-	if (j) {
-
-		return ("%d\n", c);
-	}
-	else
-		return (0);
-	
-	
-
+	son = my_strcmp("pote", "pot");
+	printf("%d\n", son);
+	return(0);
 }

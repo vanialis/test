@@ -7,7 +7,7 @@
 		int basic functions
 	*/
 	int	square(int nb); // return the square of nb (x²). -1 on error
-	int 	my_pow(int nb, int pow); // return nb^pow. -1 on error
+	int 	my_pow(int nb, int pow); // return nb^pow. -1 on my_errornb
 	int	square_root(int nb); // return the square root of nb. -1 on error
 	int	is_prime(int nb); // return 1 if nb is a prime number. 0 otherwise
 
@@ -24,7 +24,7 @@
 		char * basic functions
 	*/
 	int	my_strlen(char *str); // return the number of char in str. 0 otherwise
-	int	my_putstr(char *str); // print str on return the number of char printed. -1 on error
+	int	my_putstr(char *str); // print str and return the number of char printed. -1 on error
 	char	*my_strcpy(char *dest, char *src); // copt src in dest. the string need to be allocated before hand. return null on error
 	char	*my_strdup(char *src); // return src in a new address space. return null on error
 	char	*my_strcat(char *dest, char *src); // concat src in dest. dest may have to be extend. return null on error (from here, if not specified, function returning pointer may return null on error)
